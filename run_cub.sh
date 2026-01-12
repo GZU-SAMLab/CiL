@@ -1,3 +1,0 @@
-# CiL
-# cub200
-nohup python train_cub.py --frozen_backbone_part --flip_on_means --ckp_prefix cil_cub --gpu 0 --epochs 160 --epochs_new 60 --include_unlabel --use_proto --update_proto --u_ratio 1 --use_conloss --kd_only_old --dim 512 --unlabels_predict_mode cosine --dataset cub --num_classes 200 --nb_cl_fg 100 --image_size 224 --nb_cl 10 --unlabeled_num_selected 160 --unlabeled_num 300 --nb_protos 20 --base_lr 0.001 --new_lr 0.0005 --train_batch_size 32 --test_batch_size 50 --u_iter 100 --use_pretrain --enable_dcd --lambda_dcd 1.0 2>&1 > cil_cub.log &
